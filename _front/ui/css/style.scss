@@ -271,6 +271,14 @@
             color: #52b96f;
         }
     }
+
+    &.green-link{
+        color: #52b96f;
+
+        &:hover{
+            color:#fff;
+        }
+    }
 }
 
 a{
@@ -1176,7 +1184,7 @@ a{
   #logo{
     line-height: 60px;
     a{
-        height: 50px;
+        height: 40px;
     }
   }
 
@@ -1222,9 +1230,9 @@ a{
         bottom: -8px;
       }
       &:before, &:after {
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
+        //-webkit-transition: all .2s ease-in-out;
+        //-moz-transition: all .2s ease-in-out;
+        //transition: all .2s ease-in-out;
       }
     }
         
@@ -1344,6 +1352,7 @@ a{
     #engaged-wrapper{
         padding:30px 0;
     }
+
     #engaged-box{
         margin-top: 20px;
 
@@ -1356,6 +1365,12 @@ a{
                 margin-top:0;
             }
 
+        }
+
+        .icon{
+            margin: 0 0 15px;
+            height: 40px;
+            line-height: 40px;
         }
     }
 } /*768*/

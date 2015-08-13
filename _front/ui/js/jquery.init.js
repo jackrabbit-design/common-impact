@@ -123,7 +123,7 @@ function _isScreen(){
 		$('#circle-numbers').each(function(){
 			if($(this).isOnScreen() === true){
 				var delay = 0;
-				$('li',this).each(function() {
+				$('.slick-active',this).each(function() {
 					var $li = $(this);
 					setTimeout(function() {
 					  $li.addClass('active');	
@@ -132,7 +132,7 @@ function _isScreen(){
 						   setTimeout(function(){
 							   $li.addClass("show-line");
 						   }, 1200);
-					   }, 800);
+					   }, 1050);
 					}, delay+=250);
 			  });
 			}
@@ -169,7 +169,7 @@ function _numbersCarousel(){
 		  breakpoint: 880,
 		  settings: {
 			slidesToShow: 2,
-			slidesToScroll:1
+			slidesToScroll:2
 		  }
 		},
 		{
@@ -180,6 +180,26 @@ function _numbersCarousel(){
 		  }
 		},
 	  ]	 
+	});
+	
+	$('#circle-numbers').on({
+		afterChange: function() {
+			$('#circle-numbers').each(function(){
+				var delay = 0;
+				$('.slick-active',this).each(function() {
+					var $li = $(this);
+					setTimeout(function() {
+					  $li.addClass('active');	
+						setTimeout(function(){
+						   $li.addClass("show-content");
+						   setTimeout(function(){
+							   $li.addClass("show-line");
+						   }, 1200);
+					   }, 800);
+					}, delay+=0);
+			  });
+			});
+		}
 	});
 }
 

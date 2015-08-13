@@ -211,6 +211,8 @@ html, body { font-family: "varela_roundregular", sans-serif; }
 .link { font-size: 16px; font-weight: 400; line-height: 16px; display: inline-block; }
 .link.white-link { color: #fff; }
 .link.white-link:hover { color: #52b96f; }
+.link.green-link { color: #52b96f; }
+.link.green-link:hover { color: #fff; }
 
 a { -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
@@ -407,13 +409,12 @@ color: #fff;*/ }
   .visible-s { display: block !important; }
   #header { height: 60px; position: relative; }
   #logo { line-height: 60px; }
-  #logo a { height: 50px; }
+  #logo a { height: 40px; }
   #toggle_menu_btn { width: 50px; height: 52px; position: absolute; top: 4px; right: 5px; cursor: pointer; overflow: hidden; text-align: center; line-height: 52px; color: #fff; -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; }
   #toggle_menu_btn span { cursor: pointer; border-radius: 5px; height: 3px; width: 25px; background: #194591; position: absolute; display: block; content: ''; top: 50%; margin-top: -2px; left: 50%; margin-left: -13px; }
   #toggle_menu_btn span:before, #toggle_menu_btn span:after { cursor: pointer; border-radius: 5px; height: 3px; width: 25px; background: #194591; position: absolute; display: block; content: ''; }
   #toggle_menu_btn span:before { top: -8px; }
   #toggle_menu_btn span:after { bottom: -8px; }
-  #toggle_menu_btn span:before, #toggle_menu_btn span:after { -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
   #toggle_menu_btn:hover span, #toggle_menu_btn.active span { background-color: #50b46c; }
   #toggle_menu_btn:hover span:before, #toggle_menu_btn:hover span:after, #toggle_menu_btn.active span:before, #toggle_menu_btn.active span:after { background-color: #50b46c; }
   #toggle_menu_btn.active span { background-color: transparent; }
@@ -436,7 +437,8 @@ color: #fff;*/ }
   #engaged-wrapper { padding: 30px 0; }
   #engaged-box { margin-top: 20px; }
   #engaged-box li { padding: 0; width: 100%; margin-top: 40px; }
-  #engaged-box li:first-child { margin-top: 0; } }
+  #engaged-box li:first-child { margin-top: 0; }
+  #engaged-box .icon { margin: 0 0 15px; height: 40px; line-height: 40px; } }
 /*768*/
 @media screen and (max-width: 480px) { #champions { padding-left: 10px; padding-right: 10px; }
   .hm-module h3 { font-size: 25px; line-height: 25px; }
