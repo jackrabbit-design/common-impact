@@ -205,7 +205,9 @@ html, body { font-family: "varela_roundregular", sans-serif; }
 .btn { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); color: #f2f2f2; font-size: 16px; font-weight: 400; line-height: 16px; padding: 12px 18px; display: inline-block; }
 .btn.light-green-1 { background-color: #50b46c; }
 .btn.light-green-1:hover { background-color: #258584; }
-.btn.light-green-2 { background-color: #50b46c; }
+.btn.light-green-3 { background-color: #50b46c; }
+.btn.light-green-3:hover { background-color: #fff; color: #52b96f; }
+.btn.light-green-2 { background-color: #50b46c; line-height:5px; border-radius:100px; padding:12px 10px; }
 .btn.light-green-2:hover { background-color: #fff; color: #52b96f; }
 
 .link { font-size: 16px; font-weight: 400; line-height: 16px; display: inline-block; }
@@ -225,7 +227,7 @@ form ul li div { display: inline-block; vertical-align: top; }
 
 input[type=submit], button { display: inline-block; cursor: pointer; }
 
-#header { height: 90px; background: #fff; width: 100%; }
+#header { height: 90px; background: #fff; width: 100%; margin-top:20px; margin-bottom:5px;  }
 #header .header-social { margin-left: 15px; margin-top: 22px; }
 #header .header-social a { margin-left: 10px; }
 #header .header-social a i { display: inline-block; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; width: 25px; height: 25px; color: #fff; font-size: 23px; text-align: center; line-height: 25px; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
@@ -383,10 +385,10 @@ color: #fff;*/ }
 
 .slick-prev:before, .slick-next:before { font-size: 50px; font-family: "common-impact"; color: #258584; }
 
-.slick-prev { left: 5px; }
+.slick-prev { left: 30px; }
 .slick-prev:before { content: 'e'; }
 
-.slick-next { right: 5px; }
+.slick-next { right:30px; }
 .slick-next:before { content: 'f'; }
 
 /* ========================================================================= */
