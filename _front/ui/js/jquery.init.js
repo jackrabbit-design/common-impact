@@ -203,6 +203,18 @@ function _numbersCarousel(){
 	});
 }
 
+function showMoreOrLess(thisObj,bonusContent){
+    var caption = thisObj.innerHTML;
+    //alert(caption);
+    if ( caption == "...Read more" ) {
+        document.getElementById(bonusContent).style.display = "inline";
+        thisObj.innerHTML = " Read less";
+    } else {
+        document.getElementById(bonusContent).style.display = "none";
+        thisObj.innerHTML = "...Read more";
+    }
+};
+
 $(window).resize(function(){
 	if( $(window).innerWidth() > 767 ){
 		$("#mobile-menu-wrap").removeAttr("style");
@@ -371,3 +383,4 @@ jQuery(function ($) {
         $this.countTo(options);
       }
     });
+
