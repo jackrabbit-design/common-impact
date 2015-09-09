@@ -205,8 +205,11 @@ html, body { font-family: "varela_roundregular", sans-serif; }
 .dropdwn-btn { display: none; }
 
 .btn { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); color: #f2f2f2; font-size: 16px; font-weight: 400; line-height: 16px; padding: 12px 18px; display: inline-block; }
+.btn2 { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); -moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07); color: #f2f2f2; font-size: 16px; font-weight: 400; line-height: 16px; padding: 3px 7px; display: inline-block; }
 .btn.light-green-1 { background-color: #50b46c; }
 .btn.light-green-1:hover { background-color: #258584; }
+.btn2.light-green-1 { background-color: #50b46c; }
+.btn2.light-green-1:hover { background-color: #258584; }
 .btn.light-green-3 { background-color: #50b46c; }
 .btn.light-green-3:hover { background-color: #fff; color: #52b96f; }
 .btn.light-green-2 { background-color: #50b46c; line-height:5px; border-radius:100px; padding:12px 10px; }
@@ -400,14 +403,39 @@ color: #fff;*/ }
 /*           BIO PAGES                */
 
 
-#champion-top {background-color:#F1F4F6; border-top:2px solid #DEE4E7; padding-top:39px; }
-.left {float:left; width:50%;}
-.right {float:right; width:50%;}
-.rachel {height:338px; overflow:hidden; border-radius:1em 0 0 1em; box-shadow: 3px 3px 0px #EAECED; }
+#champion-top {background-color:#F1F4F6; border-top:2px solid #DEE4E7; padding:39px 0; }
+#champion-top .left {float:left; width:50%;}
+#champion-top .right {float:right; width:50%;}
+.rachel {height:338px; width:550px; overflow:hidden; border-radius:1em 0 0 1em; box-shadow: 3px 3px 0px #EAECED;}
 #champion-top .right {height:338px; background-color:#ffffff; border-radius:0 1em 1em 0; padding:37px 0 0 55px; box-shadow: 3px 3px 0px #EAECED;}
 #champion-top .right h3 {font-family: 'varela_roundregular'; font-size: 30px; color: #194591; line-height: 37px;}
-#champion-bio {background-color:#ffffff;}
-.shadow {box-shadow: 10px 10px 5px #888888;}
+#champion-top .right h5 {font-family: Helvetica; font-size: 14px; color: #52B96F; line-height: 17px;}
+#champion-top .right p {font-family: Helvetica; font-weight:300; font-size: 18px; color: #586065; line-height: 28px; padding:30px 0;}
+#champion-bio {background-color:#ffffff; padding-top:71px; padding-bottom:76px;}
+.spacer {width:100%; height:1px; background-color:#DEE4E7;}
+#champion-bio .spacer {margin:45px 0;}
+#champion-bio .left {float:left; width:65%; padding-right:59px;}
+#champion-bio .right {float:left; width:35%;}
+#champion-bio ul {text-align: center;}
+#champion-bio ul li {display:inline-block;}
+#champion-bio h2 {font-family: Helvetica; font-size: 18px; color: #258584; text-align:center; line-height: 28px; max-width:500px;}
+#champion-bio .left h3 {font-family: 'varela_roundregular'; font-size: 24px; color: #194591; line-height: 29px; padding-top:35px; padding-bottom:16px;}
+.quote { font-family: 'Arial Rounded MT'; font-weight: bold; max-width:40px; font-size: 48px; color: #258584; line-height: 50px; vertical-align: top;}
+#champion-bio .left p {font-family: Helvetica; font-weight:300; font-size:15px; line-height:24px; color:#586065; padding-bottom:10px;}
+#champion-bio .left ol {font-family: Helvetica; font-weight:300; font-size:15px; line-height:24px; color:#586065; padding:20px 0 20px 25px; counter-reset: item; display: table;}
+#champion-bio .left ol li { display: table-row;}
+#champion-bio .left ol li:before { content: counter(item) ". "; counter-increment: item; font-weight:bold; color: #258584; display: table-cell; text-align: right; padding-right: 15px;}
+.second-ul {padding-top:43px;}
+.last {margin-top:50px;}
+.sidebar {background: #F1F4F6; border-radius: 20px; padding:32px 48px 32px 38px;}
+.sidebar h3 {font-family: 'varela_roundregular'; font-size: 22px; color: #258584; line-height: 26px;}
+.sidespacer {width:100%; height: 2px; background-color:#DEE4E7; margin-top:11px;}
+.sidebar h4 {font-family: 'varela_roundregular'; font-size: 18px; color: #52B96F; line-height: 22px; padding-top:26px;}
+.sidebar p {font-family: Helvetica; font-weight:300; font-size: 15px; color: #586065; line-height: 21px; padding:10px 0;}
+.sidebar-outter {padding:32px 48px 32px 38px;}
+.sidebar-outter h3 {font-family: 'varela_roundregular'; font-size: 18px; color: #258584; line-height: 26px;}
+.sidebar-outter a {font-family: Helvetica; font-weight:300; font-size: 15px; color: #52B96F; line-height: 24px;}
+.outter-spacer {margin:5px 0 5px 0; width:100%; height:1px; background-color:#DEE4E7;}
 
 /* ========================================================================= */
 /* !MEDIA QUERIES */
