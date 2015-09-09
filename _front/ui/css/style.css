@@ -4,6 +4,8 @@
 /* ========================================================================= */
 html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp, var, hr, acronym, dl, dt, dd, ol, ul, li, pre, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { border: 0; outline: 0; font-style: normal; font-weight: 400; font-size: 100%; vertical-align: baseline; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; }
 
+* { box-sizing: border-box;} 
+
 em, strong, b, i, a, span, sub, sup, small { border: 0; outline: 0; font-size: 100%; vertical-align: baseline; margin: 0; padding: 0; }
 
 a:focus { outline: 0; }
@@ -237,6 +239,8 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
 #header .header-social a i.social-twitter { background-color: #00b8f3; }
 #header .header-social a i.social-twitter:before { top: 1px; }
 #header .header-social a i:hover { background-color: #258584; }
+#mobile-menu-wrap {display:none;}
+
 
 #logo { display: inline-block; line-height: 90px; }
 #logo a { display: block; height: 90px; display: inline-block; vertical-align: middle; }
@@ -390,6 +394,20 @@ color: #fff;*/ }
 
 .slick-next { right:30px; }
 .slick-next:before { content: 'f'; }
+
+
+
+/*           BIO PAGES                */
+
+
+#champion-top {background-color:#F1F4F6; border-top:2px solid #DEE4E7; padding-top:39px; }
+.left {float:left; width:50%;}
+.right {float:right; width:50%;}
+.rachel {height:338px; overflow:hidden; border-radius:1em 0 0 1em; box-shadow: 3px 3px 0px #EAECED; }
+#champion-top .right {height:338px; background-color:#ffffff; border-radius:0 1em 1em 0; padding:37px 0 0 55px; box-shadow: 3px 3px 0px #EAECED;}
+#champion-top .right h3 {font-family: 'varela_roundregular'; font-size: 30px; color: #194591; line-height: 37px;}
+#champion-bio {background-color:#ffffff;}
+.shadow {box-shadow: 10px 10px 5px #888888;}
 
 /* ========================================================================= */
 /* !MEDIA QUERIES */

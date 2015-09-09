@@ -224,7 +224,7 @@ $(window).resize(function(){
     from: 0,               // the number the element should start at
     to: 0,                 // the number the element should end at
     speed: 1000,           // how long it should take to count between the target numbers
-    refreshInterval: 100,  // how often the element should be updated
+    refreshInterval: 1,  // how often the element should be updated
     decimals: 0,           // the number of decimal places to show
     formatter: formatter,  // handler for formatting the value before rendering
     onUpdate: null,        // callback method for every time the element is updated
@@ -332,3 +332,42 @@ $(window).resize(function(){
     });
   };
 }(jQuery));
+
+
+jQuery(function ($) {
+
+      // custom formatting example
+      $('#hours').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+
+
+     $('#completed').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+
+   $('#raised').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+
+   $('#volunteers').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+
+      // start all the timers
+      $('.timer').each(count);
+
+      function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+      }
+    });
